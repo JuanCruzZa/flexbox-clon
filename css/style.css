@@ -7,10 +7,12 @@
 }
 
 body {
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
 }
 
 .contactos {
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,19 +23,24 @@ body {
 
 .menu-izquierda{
     margin-left: 35px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .menu-izquierda a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0 5px 0 5px;
 }
 
+.menu-izquierda a:hover{
+    color: rgb(0, 194, 229);
+}
+
 .barra {
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 100;
     vertical-align: middle;
+    color: white;
     
 }
 /* Redes sociales con font awesome */
@@ -41,11 +48,15 @@ body {
     margin-right: 35px;
 }
 .redes-sociales a {
-    color: rgb(33, 17, 17);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     text-decoration: none;
     padding: 0 12px 0 12px;;
 
+}
+
+.redes-sociales a:hover{
+    color: rgb(0, 194, 229);
 }
 
 .icono-facebook::before {
@@ -70,4 +81,49 @@ body {
     content: "\f08c";
     font-family: "Font Awesome 6 Brands";
     font-weight: 900;
+}
+
+/* ------HERO------ */
+
+.hero{
+    background-color: black;
+}
+
+.menu {
+    text-align: right;
+    padding: 35px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.menu a:hover{
+    color: rgb(0, 194, 229);
+}
+
+.buscador{
+    padding: 0 15px;
+    color: white;
+}
+
+.buscador:hover{
+    color: rgb(0, 194, 229);
+}
+
+.buscador::before  {
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
 }

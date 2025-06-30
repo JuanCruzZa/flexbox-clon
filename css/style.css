@@ -1,6 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+.contactos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 35px;
+}
+
+.menu-izquierda{
+    margin-left: 35px;
+    font-weight: 600;
+}
+
+.menu-izquierda a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 5px 0 5px;
+}
+
+.barra {
+    font-size: 25px;
+    font-weight: 200;
+    vertical-align: middle;
+    
+}
+/* Redes sociales con font awesome */
+.redes-sociales{
+    margin-right: 35px;
+}
+.redes-sociales a {
+    color: rgb(33, 17, 17);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 12px 0 12px;;
+
+}
+
+.icono-facebook::before {
+    content: "\f082";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 900;
+}
+
+.icono-twitter::before {
+    content: "\f099";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 900;
+}
+
+.icono-google::before {
+    content: "\f2b3";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 900;
+}
+
+.icono-linkedin::before {
+    content: "\f08c";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 900;
 }

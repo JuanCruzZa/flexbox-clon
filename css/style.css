@@ -145,11 +145,17 @@ body {
     flex-direction: row;
     padding: 35px;
     width: 100%;
+    max-width: 1500px;
+    margin-inline: auto;
 }
 
-.contenedor > *{
-    flex:1 1 0;      /* basis 0, grow 1, shrink 1 → se reparten 50 %  */
-    min-width:0;     /* permite que el texto rompa línea si hace falta */
+/* 
+ ">" Combinador de hijo directo que sólo afecta a los hijos inmediatos, no a nietos.
+ "*" Selector universal para afectar a cualquier etiqueta. 
+ */
+.contenedor > *{	
+    flex:1 1 0;      
+    min-width:0;     
 }
 
 .mision-filosofia {
@@ -158,13 +164,11 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding: 35px;
-
-
 }
 
 .mision-filosofia h3 {
     padding: 15px 0;
-    color: rgb(23, 28, 36);
+    color: rgb(15, 33, 49);
     text-align: left;
 }
 
@@ -173,7 +177,30 @@ body {
 }
 
 .imagen-reunion {
-    /* padding: 35px; */
     width: 100%;
     object-fit: cover;
+}
+
+.grupos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-width: 1080px;
+    margin-inline: auto;
+    gap: 35px 230px;
+}
+
+.grupos h2 {
+    color: rgb(15, 33, 49);
+    padding: 10px;
+    font-weight: 300;
+}
+
+/* Dentro del h2 destaco una parte poniendola "en negrita" (no hay conflicto ya que el orden de prioridad es por especificidad, por lo que ".grupos h2 span" tiene más peso que ".grupos h2") */
+.grupos h2 span {
+    font-weight: 700;
+}
+
+.grupos p {
+    color: rgb(97, 97, 97);
 }

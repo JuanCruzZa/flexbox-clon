@@ -11,14 +11,14 @@ body {
 }
 
 .contactos {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding: 19px 35px;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .barra {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 100;
     vertical-align: middle;
     color: white;
@@ -52,7 +52,7 @@ body {
 }
 .redes-sociales a {
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
     padding: 0 12px 0 12px;;
 
@@ -99,6 +99,7 @@ body {
     background-size: cover;
     padding: 70px;
     height: 70vh;
+    margin-bottom: 35px;
 }
 
 .menu {
@@ -108,7 +109,7 @@ body {
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0 15px;
 }
@@ -133,8 +134,46 @@ body {
 }
 
 .titulo {
-    font-size: 92px;
+    font-size: 80px;
     font-weight: 700;
     color: white;
     text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    width: 100%;
+}
+
+.contenedor > *{
+    flex:1 1 0;      /* basis 0, grow 1, shrink 1 → se reparten 50 %  */
+    min-width:0;     /* permite que el texto rompa línea si hace falta */
+}
+
+.mision-filosofia {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px;
+
+
+}
+
+.mision-filosofia h3 {
+    padding: 15px 0;
+    color: rgb(23, 28, 36);
+    text-align: left;
+}
+
+.mision-filosofia p {
+    color: rgb(97, 97, 97);
+}
+
+.imagen-reunion {
+    /* padding: 35px; */
+    width: 100%;
+    object-fit: cover;
 }

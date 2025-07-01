@@ -188,6 +188,7 @@ body {
     max-width: 1080px;
     margin-inline: auto;
     gap: 35px 230px;
+    margin-bottom: 35px;
 }
 
 .grupos h2 {
@@ -203,4 +204,63 @@ body {
 
 .grupos p {
     color: rgb(97, 97, 97);
+    font-weight: 400;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.imagenes img {
+    filter: grayscale(100%);
+    min-width:0;
+}
+
+.imagenes img:hover {
+    filter: grayscale(0%)
+}
+
+.vender-proyecto {
+    background-image: url(../img/fondo\ footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 43vh;
+    align-items: center;
+}
+
+.vender-proyecto h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(15, 33, 49);
+    max-width: 500px;
+}
+
+.vender-proyecto p {
+    color: rgb(97, 97, 97);
+    font-weight: 400;
+    font-size: 18;
+}
+
+.vender-proyecto button {
+    font-weight: 600;
+    font-size: 20px 25px;
+    color: white;
+    background-color: rgb(0, 194, 229);
+    border: none;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.vender-proyecto button:hover {
+    background-color: rgb(15, 33, 49);
+    color: rgb(0, 194, 229);
 }

@@ -9,6 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
+    background-image: ;
 }
 
 .contactos {
@@ -18,12 +19,13 @@ body {
     justify-content: space-between;
     text-align: center;
     font-size: 14px;
-    margin: 15px 35px;
+    margin: 19px 35px;
 }
 
 .menu-izquierda{
     margin-left: 35px;
     font-weight: 500;
+    padding-left: 35px;
 }
 
 .menu-izquierda a {
@@ -46,6 +48,7 @@ body {
 /* Redes sociales con font awesome */
 .redes-sociales{
     margin-right: 35px;
+    padding-right: 35px;
 }
 .redes-sociales a {
     color: rgb(255, 255, 255);
@@ -97,7 +100,7 @@ body {
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0 15px;
 }
@@ -122,8 +125,10 @@ body {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 88px;
     font-weight: 700;
     color: white;
     text-align: center;
+    padding: 35px;
+    margin: 35px;
 }

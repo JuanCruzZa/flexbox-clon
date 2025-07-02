@@ -10,6 +10,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* HEADER */
+
 .contactos {
     position: absolute;
     width: 100%;
@@ -21,6 +23,8 @@ body {
     font-size: 12px;
     padding: 19px 35px;
 }
+
+/* Menu de la izquierda con services, pricing y request a quote */
 
 .menu-izquierda{
     margin-left: 35px;
@@ -45,7 +49,9 @@ body {
     color: white;
     
 }
+
 /* Redes sociales con font awesome */
+
 .redes-sociales{
     margin-right: 35px;
     padding-right: 35px;
@@ -91,6 +97,8 @@ body {
     font-family: "Font Awesome 6 Brands";
     font-weight: 900;
 }
+
+/* MAIN */
 
 /* ------HERO------ */
 
@@ -155,6 +163,8 @@ body {
     margin-inline: auto;
 }
 
+/* Comienzo de la seccion que contiene la imagen de la chica en una reunion, la filosofia y la mision de la empresa */
+
 /* 
  ">" Combinador de hijo directo que sólo afecta a los hijos inmediatos, no a nietos.
  "*" Selector universal para afectar a cualquier etiqueta. 
@@ -187,6 +197,8 @@ body {
     object-fit: cover;
 }
 
+/* Comiezo de la seccion que contiene el equipo de diseño y de desarrollo */
+
 .grupos {
     display: flex;
     flex-direction: row;
@@ -213,6 +225,8 @@ body {
     font-weight: 400;
 }
 
+/* Comiezo de la seccion que contiene las 4 imagenes */
+
 .imagenes {
     display: flex;
     flex-wrap: nowrap;
@@ -229,6 +243,8 @@ body {
 .imagenes img:hover {
     filter: grayscale(0%)
 }
+
+/* Seccion que contiene la oferta para comenzar el proyecto con la empresa */
 
 .vender-proyecto {
     background-image: url(../img/fondo\ footer.jpg);
@@ -264,18 +280,24 @@ body {
     padding: 15px;
     margin-top: 15px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease;
 }
 
 .vender-proyecto button:hover {
     background-color: rgb(15, 33, 49);
     color: rgb(0, 194, 229);
+    transform: scale(1.2);
 }
+
+/* FOOTER */
+
+/* Comiezo de las 4 secciones "about us, recent post, instagram y newsletter" */
 
 .pie {
     background-color: rgb(35, 36, 42);
     display: flex;
     flex-direction: row;
-    padding: 35px 0;
+    padding: 35px 35px;
 }
 
 .pie > * {
@@ -300,8 +322,11 @@ body {
 .pie div p {
     color: rgb(116, 116, 116);
     font-weight: 400;
+    text-align: justify;
+    font-size: 17px;
 }
 
+/* Modificaciones pertinentes al div de "about us" */
 .direccion-telefono{
     padding: 15px 0;
 }
@@ -317,6 +342,7 @@ body {
     margin: 0 8px 0 0;
     padding: 8px 12px;
     border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
 }
 
@@ -324,3 +350,101 @@ body {
     background-color: rgb(0, 194, 229);
     color: rgb(255, 255, 255);
 }
+
+/* Modificaciones al div de noticias */
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.noticias div {
+    display: flex;
+    flex-direction: row;
+}
+
+.noticias div img{
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.noticias hr {
+    border: 0;
+    border-top: 1px solid;
+    border-color: rgb(47, 49, 51);
+
+
+}
+
+.noticias a {
+    text-decoration:none;
+}
+
+.noticias div div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+.titulo-noticia {
+    font-weight: 600;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.titulo-noticia:hover {
+    transform: scale(1.05);
+}
+
+/* Modificaciones al div de novedades */
+
+.novedades {
+    border: 8px solid;
+    border-color: rgb(47, 49, 55);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.pie .novedades p {
+    text-align: left;
+    padding: 15px 0 35px 0;
+}
+
+.pie input {
+    background-color: rgb(35, 36, 42);
+    border: 5px solid;
+    border-color: rgb(47, 49, 55);
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pie input::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+.pie input:focus {
+    outline: none;
+    border-color: rgb(0, 194, 229);
+}
+
+.pie button {
+    padding: 25px;
+    background-color: rgb(0, 194, 229);
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    transition: color 0.3 ease, transform 0.5s ease;
+}
+
+.pie button:hover {
+    color: rgb(15, 33, 49);
+    transform: scale(1.05);
+}
+

@@ -86,6 +86,12 @@ body {
     font-weight: 900;
 }
 
+.icono-instagram::before {
+    content: "\f16d";
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 900;
+}
+
 /* ------HERO------ */
 
 .hero {
@@ -263,4 +269,58 @@ body {
 .vender-proyecto button:hover {
     background-color: rgb(15, 33, 49);
     color: rgb(0, 194, 229);
+}
+
+.pie {
+    background-color: rgb(35, 36, 42);
+    display: flex;
+    flex-direction: row;
+    padding: 35px 0;
+}
+
+.pie > * {
+    flex: 0 0 25%;
+    min-width: none;
+}
+
+.pie > div {
+    padding: 35px;
+}
+
+.pie div h3{
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+}
+
+.titulo-pie {
+    padding: 35px 0 15px 0;
+}
+
+.pie div p {
+    color: rgb(116, 116, 116);
+    font-weight: 400;
+}
+
+.direccion-telefono{
+    padding: 15px 0;
+}
+
+.redes-footer{
+    padding: 15px 0;
+}
+.redes-footer a {
+    background-color: rgb(45, 47, 51);
+    color: rgb(164, 164, 164);
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 8px 0 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+
+}
+
+.redes-footer a:hover{
+    background-color: rgb(0, 194, 229);
+    color: rgb(255, 255, 255);
 }

@@ -39,7 +39,7 @@ body {
 }
 
 .menu-izquierda a:hover{
-    color: rgb(0, 194, 229);
+    color: rgb(0, 194, 228);
 }
 
 .barra {
@@ -65,7 +65,7 @@ body {
 }
 
 .redes-sociales a:hover{
-    color: rgb(0, 194, 229);
+    color: rgb(0, 194, 228);
 }
 
 .icono-facebook::before {
@@ -129,7 +129,7 @@ body {
 }
 
 .menu a:hover{
-    color: rgb(0, 194, 229);
+    color: rgb(0, 194, 228);
 }
 
 .buscador{
@@ -138,7 +138,7 @@ body {
 }
 
 .buscador:hover{
-    color: rgb(0, 194, 229);
+    color: rgb(0, 194, 228);
 }
 
 .buscador::before  {
@@ -275,7 +275,7 @@ body {
     font-weight: 600;
     font-size: 20px 25px;
     color: white;
-    background-color: rgb(0, 194, 229);
+    background-color: rgb(0, 194, 228);
     border: none;
     padding: 15px;
     margin-top: 15px;
@@ -347,7 +347,7 @@ body {
 }
 
 .redes-footer a:hover{
-    background-color: rgb(0, 194, 229);
+    background-color: rgb(0, 194, 228);
     color: rgb(255, 255, 255);
 }
 
@@ -378,6 +378,14 @@ body {
 
 }
 
+.pie .noticias > div{
+    transition: transform 0.3s ease;
+}
+
+.pie .noticias > div:hover{
+    transform: scale(1.1);
+}
+
 .noticias a {
     text-decoration:none;
 }
@@ -391,11 +399,11 @@ body {
 .titulo-noticia {
     font-weight: 600;
     color: white;
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .titulo-noticia:hover {
-    transform: scale(1.05);
+    color: rgb(0, 194, 228);
 }
 
 /* Modificaciones al div de novedades */
@@ -430,12 +438,12 @@ body {
 
 .pie input:focus {
     outline: none;
-    border-color: rgb(0, 194, 229);
+    border-color: rgb(0, 194, 228);
 }
 
 .pie button {
     padding: 25px;
-    background-color: rgb(0, 194, 229);
+    background-color: rgb(0, 194, 228);
     border: none;
     font-weight: 700;
     font-size: 15px;
@@ -448,3 +456,34 @@ body {
     transform: scale(1.05);
 }
 
+/* Derechos y menú del final */
+
+.derechos {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(38, 39, 46);
+    padding: 35px 0;
+}
+
+.derechos p{
+    color: rgb(88, 98, 108);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.derechos a {
+    text-decoration: none;
+    color: rgb(88, 98, 108);
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.derechos a:hover {
+    color: rgb(0, 194, 228);
+}
+
+.derechos span {
+    color: rgb(0, 194, 228);
+    font-weight: 800;
+}
